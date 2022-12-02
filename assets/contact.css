@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: white;
+}
+.logo{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.logo span{
+    color: #FF4612;
+}
+.navbar{
+    display: flex;  
+    position: relative;
+    justify-content: space-between;
+    width: 70%;
+    gap: 1rem;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    /* margin-left: 80px; */
+    font-weight: 700;
+}
+header .icons i{
+    /* visibility: hidden; */
+    margin-left: 50px;
+    cursor: pointer;
+    /* padding-left: 50px; */
+}
+header .icons .fa-bars{
+    /* visibility: hidden; */
+    display: none;
+}
+header .icons .fa-shopping-cart{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.btn-commander{
+    padding: 10px 20px;
+    background-color: #FF4612;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn-commander:hover {
+    background: #ff6b42;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: #FF4612;
+    border-bottom: #ff6b42 solid ;
+}
+
+/* --------- contact box --------- */
+section{
+    background-image: url(../images/wall-orange.jpg);
+    background-size: cover;
+    height: 75vh;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-box{
+    position: absolute;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* padding: 40px 19px; */
+    background: white;
+    box-shadow: 5px 15px 50px rgb(0 0 0 / 80%);
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    gap: 3%;
+
+}
+.contact-box .inp{
+    width: 80%;
+    height: 35px;
+}
+.contact-box textarea{
+    resize: none;
+    width: 80%;
+    height: 150px;
+}
+.contact-box input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background-color: #FF4612;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    width: 150px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+
+
+
+/* ------- footer ------- */
+.copyright {
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.copyright p:nth-child(1) {
+    color:black;
+
+}
+.copyright  a{
+    color: #ff6b42;
+    text-decoration: none;
+    font-style: italic;
+}

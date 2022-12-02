@@ -1,0 +1,273 @@
+@media (max-width:991px) {
+    html {
+        /* font-size: 55%; */
+    }
+   header {
+    /* padding: 0; */
+   }
+   .contactform .inputboite input,
+   .contactform .inputboite textarea{
+       width: 100%;
+       font-size: 16px;
+       font-weight: 300;
+
+   }
+    .col1 p,
+    .col1,
+    .titre,
+    .titre p{
+        font-size: 15px;
+
+    }
+    .contenu p{
+        padding: 10% 0 10% 0;
+        font-size: 100%;
+    }
+
+}
+
+
+
+@media (max-width:768px) {
+    .contactform{
+        left: 20%;
+        width: 60%;
+    }
+    .contactform .inputboite input,
+    .contactform .inputboite textarea{
+        width: 100%;
+        font-size: 10px;
+        font-weight: 300;
+
+    }
+    .contactform .inputboite input[type="submit"] {
+        font-size: 0.8em;
+        font-weight: 500;
+        max-width: 120px;
+
+    }
+    .contenu p{
+        padding: 10% 0 10% 0;
+        font-size: 80%;
+    }
+    
+
+}
+
+
+@media (max-width:684px){
+
+    .banniere .contenu .paragraph {
+        font-size: 160%;
+
+    }
+}
+
+@media (max-width:650px){
+    .menu .btn-menu{
+        flex-direction: row;
+    }
+
+}
+
+
+
+@media (max-width:634px){
+    .copyright p{
+        font-size: 20% !import;
+    }
+
+}
+
+
+@media (max-width:615px) {
+
+    header {
+        height: 67px;
+    }
+    header .navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:white;
+        border-top: 0.1rem solid rgba(0,0,0,.1);
+        width: 100%;
+        text-align: center;
+        font-size: 100%;
+        display: none;
+    }
+    header .active {
+
+        display: block;
+    }
+
+    header .navbar li{
+        border-bottom: #ff6b42 solid 1px;
+        /* box-shadow: 0px 5px 6px rgba(0, 0,0, 0.2); */
+        /* margin-left: 50px; */
+        margin-top: 3%;
+    }
+
+    .navbar .cmd-btn{
+        padding: 10px 0px;
+    }
+
+
+
+    header .icons .fa-bars{
+        display: unset;
+        position: absolute;
+        left: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    header .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .fa-shopping-cart {
+        position: absolute;
+        right: 50px;
+        cursor: pointer;
+    }
+    .contactform{
+        left: 7%;
+        width: 80%;
+    }
+    .contactform .inputboite input,
+    .contactform .inputboite textarea{
+        width: 100%;
+        font-size: 10px;
+        font-weight: 300;
+
+    }
+    
+    .contactform .inputboite input[type="submit"] {
+        font-size: 0.8em;
+        font-weight: 500;
+        max-width: 120px;
+
+    }
+    .col1 p,
+    .col1,
+    .titre,
+    .titre p{
+        font-size: 25px;
+
+    }
+    .contenu p{
+        padding: 10% 0 10% 0;
+        font-size: 90%;
+    }
+
+
+    
+}
+
+
+
+@media (max-width:587px){
+    .banniere .contenu .paragraph {
+        font-size: 130%;
+
+    }
+
+}
+@media (max-width:437px){
+    .contactform{
+        left: 6%;
+        top: 15%;
+        width: 90%;
+    }
+    .contactform .inputboite input[type="submit"] {
+        font-size: 0.5em;
+        font-weight: 400;
+        max-width: 120px;
+
+    }
+    .banniere .contenu .paragraph {
+        font-size: 100%;
+
+    }
+    .copyright{
+        font-size: 15px;
+    }
+
+}
+@media (max-width:415px){
+    .contact{
+        height: 80vh;
+        padding: 0px 0px;
+    }
+    .copyright{
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:396px){
+    html{
+        width: 100%;
+    }
+
+    .menu .contenu .box{
+        height: 270px;
+    }
+    .menu .contenu .box .imbox{
+        height: 200px;
+    }
+
+    .contactform{
+        left: -10%;
+        width: 95%;
+    
+    }
+    .boite-msg{
+        width: 70%;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .menu .contenu .box .imbox img{
+        height: 190px;
+    }
+
+    .contactform .inputboite input[type="submit"] {
+        font-size: 0.5em;
+        font-weight: 400;
+        max-width: 120px;
+
+    }
+    .contact{
+        height: 80vh;
+        padding: 0px 0px;
+    }
+    .contactform .inputboite{
+        width: 150%;
+    }
+    .contactform .inputboite input,
+    .contactform .inputboite textarea {
+            margin-right: 40%;
+    }
+    .contactform h3{
+        font-size: 15px;
+    }
+    .carte{
+        padding: 6.5%;
+        top: 10.4%;
+    }
+    .copyright{
+        font-size: 8px;
+    }
+    p{
+        font-size: 13px;
+    }
+
+
+}

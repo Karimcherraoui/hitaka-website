@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hitaka</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"><span>H</span>itaka</a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li class="cmd-btn">
+          <a href="menu.html" class="btn-commander">Commander</a>
+        </li>
+      </ul>
+      <div class="icons">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-shopping-cart" id="carte-icon"></i>
+      </div>
+      <div class="carte">
+        <h3 class="carte-title">Panier</h3>
+        <div class="products_container">
+          <i class="fa fa-times" aria-hidden="true" id="close"></i>
+
+          <div class="carte-content">
+            
+        </div>
+
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Payer</button>
+      </div>
+    </header>
+    <section class="menu" id="menu">
+      <div class="back-ground">
+        <div class="description">
+          <h2 class="titre"><span>L</span>a carte</h2>
+          <p>
+            Savourez des plats conçus avec des ingrédients de qualité
+            accompagnés de boissons et vins. Qu’il s’agisse de déjeuner ou de
+            dîner, nos repas comprennent un certain nombre de plats conçus pour
+            satisfaire vos papilles. Choisissez des plats préparés avec des
+            ingrédients locaux !
+          </p>
+        </div>
+        <div class="btn-menu">
+          <div class="titre titre-btn all-btn ">
+            <a href="#" class="btn1">all</a>
+          </div>
+          <div class="titre titre-btn sushi-btn">
+            <a href="#" class="btn1">sushi</a>
+          </div>
+          <div class="titre titre-btn plats-btn">
+            <a href="#" class="btn1">plats</a>
+          </div>
+        </div>
+      </div>
+      <div class="contenu">
+        <!-- <div class="titre-menu">
+          <h2 class="titre"><span>P</span>lats</h2>
+        </div> -->
+
+            <div class="box SUSHI">
+                <div class="descri-carte">
+            <div class="imbox">
+              <img class="menu-img" src="./images/CARTE/1.jpg" alt="Menu-1" />
+            </div>
+            <div class="menu-title">SUSHI TRIVIA</div>
+            <div class="price">$10</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box SUSHI">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/2.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">NIGIRIZUSHI</div>
+            <div class="price">$20</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box SUSHI">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/3.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Saké Nigiri</div>
+            <div class="price">$15</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box SUSHI">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/4.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Toro</div>
+            <div class="price">$22</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box SUSHI">
+            <div class="descri-carte">
+                <div class="imbox">
+                    <img src="./images/CARTE/5.jpg" alt="Menu-1" class="menu-img" />
+                </div>
+                <div class="menu-title">Amaebi</div>
+                <div class="price">$43</div>
+                <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box SUSHI">
+          <div class="descri-carte">
+              <div class="imbox">
+              <img src="./images/CARTE/6.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Saba</div>
+            <div class="price">$13</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+    </div>
+        <div class="box SUSHI">
+            <div class="descri-carte">
+                <div class="imbox">
+                    <img src="./images/CARTE/7.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Unagi</div>
+            <div class="price">$23</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+        </div>
+        <div class="box SUSHI">
+            <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/8.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Chutoro</div>
+            <div class="price">$11</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box SUSHI">
+          <div class="descri-carte">
+              <div class="imbox">
+                  <img src="./images/CARTE/6.jpg" alt="Menu-1" class="menu-img" />
+                </div>
+            <div class="menu-title">Matsubagani</div>
+            <div class="price">$21</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="box SUSHI">
+        <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/1.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Hatahata</div>
+            <div class="price">$31</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box SUSHI">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/1.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Kimmedai</div>
+            <div class="price">$24</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box SUSHI">
+          <div class="descri-carte">
+            <div class="imbox">
+                <img src="./images/CARTE/1.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Kisu</div>
+            <div class="price">$14</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+        </div>
+        <!-- <div class="titre-menu">
+            <h2 class="titre"><span>S</span>ushi</h2>
+        </div> -->
+
+            <div class="box PLATS">
+                <div class="descri-carte">
+              <div class="imbox">
+              <img src="./images/CARTE/2.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Kohada</div>
+            <div class="price">$27</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box PLATS">
+          <div class="descri-carte">
+            <div class="imbox">
+                <img src="./images/CARTE/3.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Hiramasa</div>
+            <div class="price">$37</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box PLATS">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/4.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Tsubugai</div>
+            <div class="price">$16</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+    </div>
+        <div class="box PLATS">
+            <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/5.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Torigai</div>
+            <div class="price">$26</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="box PLATS">
+        <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/6.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Kurodai</div>
+            <div class="price">$28</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box PLATS">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/7.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Namera</div>
+            <div class="price">$38</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box PLATS">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/8.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Aoyagi</div>
+            <div class="price">$27</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+        </div>
+        <div class="box PLATS">
+          <div class="descri-carte">
+            <div class="imbox">
+                <img src="./images/CARTE/6.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Akami</div>
+            <div class="price">$37</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+    </div>
+        <div class="box PLATS">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/1.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Sawara</div>
+            <div class="price">$29</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="box PLATS">
+          <div class="descri-carte">
+            <div class="imbox">
+                <img src="./images/CARTE/2.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Isaki</div>
+            <div class="price">$39</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="box PLATS">
+        <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/3.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Kazunoko</div>
+            <div class="price">$24</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+        </div>
+        <div class="box PLATS">
+          <div class="descri-carte">
+            <div class="imbox">
+              <img src="./images/CARTE/4.jpg" alt="Menu-1" class="menu-img" />
+            </div>
+            <div class="menu-title">Masu</div>
+            <div class="price">$12</div>
+            <i class="fa fa-cart-plus add-cart" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+    </section>
+    <div class="copyright">
+      <p>
+        Copyright 2022 <a href="#"> Karim CHerraoui </a>YouCode Student. Tous
+        droits reservé
+      </p>
+    </div>
+
+    <script type="text/javascript" src="./assets/js.js"></script>
+  </body>
+</html>

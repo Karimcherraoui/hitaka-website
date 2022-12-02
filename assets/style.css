@@ -1,0 +1,702 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 100%;
+}
+
+p{
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+ /* ----- Start Style Nav-bar ----- */
+header {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: white;
+}
+.logo{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.logo span{
+    color: #FF4612;
+}
+.navbar{
+    display: flex;  
+    position: relative;
+    justify-content: space-between;
+    width: 70%;
+    gap: 1rem;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    /* margin-left: 80px; */
+    font-weight: 700;
+}
+header .icons i{
+    /* visibility: hidden; */
+    margin-left: 50px;
+    cursor: pointer;
+    /* padding-left: 50px; */
+}
+header .icons .fa-bars{
+    /* visibility: hidden; */
+    display: none;
+}
+header .icons .fa-shopping-cart{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.btn-commander{
+    padding: 10px 20px;
+    background-color: #FF4612;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn-commander:hover {
+    background: #ff6b42;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: #FF4612;
+    border-bottom: #ff6b42 solid ;
+}
+.carte{
+    position: fixed;
+    top: 14.4%;
+    width: 250px;
+    right:-200%;
+    min-height: 50vh;
+    padding: 2.5%;
+    background-color: #ffffff;
+    /* box-shadow: 1px 1px 10px; */
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+.active-carte{
+    right: 0.5%;
+}
+.hide{
+    display: none !important;
+}
+
+.carte-title{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+}
+.carte-img{
+    width: 100%;
+    object-fit: contain;
+    padding: 5%;
+
+}
+.carte-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center ;
+    gap: 10%;
+    
+
+}
+.carte-box input{
+        width: 30%;
+        height: 100%;
+}
+.detail-item{
+    display: grid;
+    row-gap: 5%;
+    margin-top: 5%;
+    /* text-align: center; */
+}
+.name{
+    font-size: 90%;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+.price{
+    font-weight: 400;
+    font-size: 80%;
+}
+.qte{
+    border: 1px solid black;
+    outline-color: #ff6b42;
+    width: 100%;
+    text-align: center;
+    font-size: 60%;
+}
+#remove-item{
+    font-size: 100%;
+    color: #FF4612;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15%;
+    border-top: 1px solid #FF4612;
+
+}
+.total-title{
+    font-size: 100%;
+    font-weight: 500;
+    
+}
+.total-price {
+    margin-left: 5%;
+}
+.btn-buy{
+    display: flex;
+    margin: 5% auto 0 auto;
+    padding: 5% 10%;
+    border: none;
+    background-color: #ff6b42;
+    color: #ffffff;
+    font-size: 70%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background: black;
+}
+#close{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 100%;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* ----- end Style nav-bar ----- */
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/wall-orange.jpg);
+    background-size: cover;
+}
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+}
+.banniere .contenu h2{
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+.banniere .contenu h2 span{
+    color: #FF4612;
+}
+.contenu p{
+    padding: 10% 0 10% 0;
+    font-size: 150%;
+}
+.btn1{
+    font-size: 1rem;
+    color: white;
+    background: #FF4612;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.btn1:hover{
+    letter-spacing: 4px;
+
+}
+
+
+
+
+.titre-about{
+    font-size: 20px;
+
+}
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .col1{
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+.row .col1 h2{
+    margin-bottom: 15px;
+}
+.titre{
+    font-size: 1.5em;
+    text-transform: capitalize;
+
+}
+
+.titre span{
+    color: #FF4612;
+    font-size: 1.5em;
+    font-weight: 700px;
+    
+}
+.row .col2 img {
+    /* height: 450px; */
+    width: 100%;
+    position: relative;
+
+}
+
+.col1 p,
+.col1,
+.titre,
+.titre p{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+/* ----- start style menu page ----- */
+
+.description{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.titre-menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titre-menu p {
+    width: 100%;
+    text-align: center;
+}
+.btn-menu {
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+
+    /* padding-bottom: 50px; */
+}
+.menu {
+    margin-top: -50px;
+    padding: 70px 20px;
+}
+.menu .contenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 40px; */
+    gap: 5px;
+    width: 100;
+}
+.menu .contenu .box{
+    width: 300px;
+    height: 340px;
+    margin-top: 15px;
+    /* margin-left: 20px; */
+    border: 5px solid white;
+    box-shadow: 10px 5px 10px rgb(0,0,0,0.3);
+    /* cursor: pointer; */
+}
+.menu .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 255px;
+}
+.menu .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+.menu .contenu .box .descri-carte{
+    text-align: center;
+    font-weight: 300px;
+}
+.menu .contenu .box .descri-carte h3{
+    font-weight: 500;
+}
+.fa-cart-plus{
+    cursor: pointer;
+}
+
+/* ----- end style menu page ----- */
+
+/* ----- start Style contact page ----- */
+.titre-contact{
+    margin-top: -65px;
+    text-align: center;
+}
+.contact-section{
+    background-image: url(../images/wall-orange.jpg);
+    background-size: cover;
+}
+.contact{
+
+    /* box-shadow: 2px 2px 12px rgba(0, 0,0, 0.8); */
+    width: 100%;
+    background-position: unset;
+    height: 75vh;
+    display: flex;
+
+}
+.contactform{
+    position: relative;
+    top: 10%;
+    left: 25%;
+    border-radius: 10px;
+    padding: 35px 50px;
+    background: white;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.5);
+    /* margin-top: 50px; */
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 450px;
+    /* margin-left: 25%; */
+}
+.contactform h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.boite-msg{
+    height: 130px;
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputboite input[type="submit"] {
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background-color: #FF4612;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- end Style contact page ----- */
+
+.copyright {
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.copyright p:nth-child(1) {
+    color:black;
+
+}
+.copyright  a{
+    color: #ff6b42;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+/* --------------------- Responsive ---------------- */
+
+@media (max-width:615px) {
+
+    header {
+        height: 67px;
+    }
+    header .navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:white;
+        border-top: 0.1rem solid rgba(0,0,0,.1);
+        width: 100%;
+        text-align: center;
+        font-size: 100%;
+        display: none;
+    }
+    header .active {
+
+        display: block;
+    }
+
+    header .navbar li{
+        border-bottom: #ff6b42 solid 1px;
+        /* box-shadow: 0px 5px 6px rgba(0, 0,0, 0.2); */
+        /* margin-left: 50px; */
+        margin-top: 3%;
+    }
+
+    .navbar .cmd-btn{
+        padding: 10px 0px;
+    }
+
+
+
+    header .icons .fa-bars{
+        display: unset;
+        position: absolute;
+        left: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    header .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .fa-shopping-cart {
+        position: absolute;
+        right: 50px;
+        cursor: pointer;
+    }
+    .contact{
+        height: 85vh;
+    }
+    .contactform{
+        left: 7%;
+        width: 80%;
+    }
+    .contactform .inputboite input,
+    .contactform .inputboite textarea{
+        width: 100%;
+        font-size: 10px;
+        font-weight: 300;
+
+    }
+    
+    .contactform .inputboite input[type="submit"] {
+        font-size: 0.8em;
+        font-weight: 500;
+        max-width: 120px;
+
+    }
+    .col1 p,
+    .col1,
+    .titre,
+    .titre p{
+        font-size: 25px;
+
+    }
+    .contenu p{
+        padding: 10% 0 10% 0;
+        font-size: 90%;
+    }
+    .mapouter{
+        top: -5px;
+    }
+
+
+    
+}
+@media (max-width:446px) {
+
+    header {
+        height: 67px;
+    }
+    header .navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:white;
+        border-top: 0.1rem solid rgba(0,0,0,.1);
+        width: 100%;
+        text-align: center;
+        font-size: 100%;
+        display: none;
+    }
+    header .active {
+
+        display: block;
+    }
+
+    header .navbar li{
+        border-bottom: #ff6b42 solid 1px;
+        /* box-shadow: 0px 5px 6px rgba(0, 0,0, 0.2); */
+        /* margin-left: 50px; */
+        margin-top: 3%;
+    }
+
+    .navbar .cmd-btn{
+        padding: 10px 0px;
+    }
+
+
+
+    header .icons .fa-bars{
+        display: unset;
+        position: absolute;
+        left: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    header .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .fa-shopping-cart {
+        position: absolute;
+        right: 50px;
+        cursor: pointer;
+    }
+    .active-carte {
+        right: 3.5%;
+    }
+    .carte {
+        top: 10.4%;
+    }
+    #remove-item {
+        margin: -16px;
+    }
+    .menu p{
+        font-size: 12px;
+    }
+    .btn1{
+        margin-top: 12px;
+        padding: 5px 15px;
+    }
+    .contact{
+        height: 80vh;
+    }
+    .contactform{
+        left: 7%;
+        width: 84%;
+    }
+    .contactform h3{
+        font-size: 1rem;
+    }
+    .contactform .inputboite input,
+    .contactform .inputboite textarea{
+        width: 100%;
+        font-size: 10px;
+        font-weight: 300;
+
+    }
+    
+    .contactform .inputboite input[type="submit"] {
+        font-size: 0.8em;
+        font-weight: 500;
+        max-width: 120px;
+
+    }
+    .col1 p,
+    .col1,
+    .titre,
+    .titre p{
+        font-size: 25px;
+
+    }
+    .mapouter{
+        top: 50px !important;
+    }
+    .contenu p{
+        padding: 10% 0 10% 0;
+        font-size: 90%;
+    }
+
+    .copyright p{
+        font-size: 13px;
+    }
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
