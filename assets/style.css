@@ -635,6 +635,16 @@ header .navbar li a:hover{
         margin-top: 12px;
         padding: 5px 15px;
     }
+    .row .pargraph{
+        font-size: 12px !important;
+
+        
+    }
+    .img1{
+        width: 85%;
+        margin-left: 8%;
+        margin-bottom: 15px;
+    }
     .contact{
         height: 80vh;
     }
@@ -676,6 +686,9 @@ header .navbar li a:hover{
 
     .copyright p{
         font-size: 13px;
+    }
+    .copy-about{
+        padding: 5px 40px;
     }
     
 
